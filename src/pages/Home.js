@@ -4,6 +4,7 @@ export const Home = () => {
       <article class="Item">
         <a href="#/1">
           <h2>Name</h2>
+          <h1>Hola</h1>
         </a>
       </article>
     </div>
