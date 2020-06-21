@@ -9,7 +9,6 @@
   },
   "author": "Bryson Florez",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "babel-loader": "^8.1.0",

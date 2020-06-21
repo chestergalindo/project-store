@@ -21,8 +21,14 @@ module.exports = {
         }
       },
       {
-        test: /\.scss$/,
-        loaders: [MiniCssExtractPlugin.loader, 'style', 'css', 'sass']
+        test: /\.scss|.sass|.css$/,
+        use: [
+          { 
+            loader: MiniCssExtractPlugin.loader 
+          },
+          'css-loader',
+          'sass-loader'
+        ]
       },
     ]
   },
@@ -36,7 +42,7 @@ module.exports = {
     ),
     new MiniCssExtractPlugin(
       {
-        filename: 'dist/styles.css'
+        filename: 'styles.css'
       }
     )
   ]
